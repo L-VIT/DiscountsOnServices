@@ -4,3 +4,250 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h4{
+    font-family: 'GothamPro-Bold';
+    font-weight: 700;
+}
+
+h3, h5{
+    font-family: 'GothamPro';
+    font-weight: 400;
+}
+
+body{
+    font-family: 'GothamPro';
+    font-weight: 400;
+    background-color: #ECF3FB;
+}
+
+header{
+    padding: 2px 0;
+    margin-bottom: 60px;
+    background-color: #fff;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    gap: 46px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-text{
+    color: #171717;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 8px;
+}
+
+.menu__item-subscriptions,
+.header__btn-language{
+    padding-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__btn-language{
+    margin-right: 42px;
+}
+
+.menu__item-subscriptions::after,
+.header__btn-language::after{
+    content: "";
+    width: 7px;
+    height: 4px;
+    background-image: url(../images/icons/arrow-down.svg);
+    position: absolute;
+    top: 8px;
+    right: 0;
+    transition: all .5s;
+}
+
+.menu__item-subscriptions:hover::after,
+.header__btn-language:hover::after{
+    transform: rotateX(180deg);
+}
+
+.subscriptions-list,
+.language__list{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    left: -40px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+    border-radius: 16px;
+    width: 205px;
+}
+
+.language__list{
+    width: 114px;
+    left: -30px;
+}
+
+.menu__item-subscriptions:hover .subscriptions-list,
+.header__btn-language:hover .language__list{
+    visibility: visible;
+    opacity: 1;
+}
+
+.subscriptions-list__item,
+.language__list-item{
+    margin: 23px;
+}
+
+.language-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.subscriptions-list__link,
+.language-btn{
+    color: #171717;
+    letter-spacing: 0.01em;
+    font-size: 17px;
+    line-height: 26px;
+    transition: all .3s;
+}
+
+.language-btn{
+    cursor: pointer;
+}
+
+.subscriptions-list__link:hover,
+.language-btn:hover{
+    color: #1749B3;
+}
+
+.header__btn-tel,
+.header__btn-telegram{
+    transition: all 2s;
+}
+
+.header__btn-tel:hover path,
+.header__btn-telegram:hover path{
+    fill: #1749B3;
+}
+
+.header__btn-tel:active path,
+.header__btn-telegram:active path{
+    fill: #4B84FD;
+}
+
+.header__btn-telegram{
+    margin-left: 14px;
+    margin-right: 40px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 40px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'GothamPro-Bold';
+    font-size: 17px;
+    line-height: 22px;
+    background-color: #1749B3;
+    border: 1px solid #1749B3;
+    border-radius: 12px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #171717;
+    background-color: #fff;
+}
+
+.btn:active{
+    background-color: #4B84FD;
+    border-color: #4B84FD;
+    color: #fff;
+}
+
+.benefit__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit__info{
+    width: 49%;
+    max-height: 470px;
+}
+
+.benefit__img{
+    width: 51%;
+    margin-top: -16px;
+}
+
+.benefit__info{
+    padding: 114px 60px 0;
+    background-color: #1749B3;
+    box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+}
+
+.benefit__title{
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 24px;
+    max-width: 472px;
+
+}
+
+.benefit__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.benefit__start{
+    padding: 15px 56px;
+    background-color: #fff;
+    border-radius: 16px;
+    font-weight: 700;
+    font-family: 'GothamPro-Bold';
+    border: 1px solid #FFFFFF;
+    transition: all .3s;
+}
+
+.benefit__start:hover{
+    color: #FFFFFF;
+    background-color: #1749B3;
+}
+
+.benefit__start:active{
+    color: #1749B3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+}
