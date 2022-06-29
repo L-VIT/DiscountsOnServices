@@ -200,12 +200,13 @@ header{
 
 .benefit__info{
     width: 49%;
-    max-height: 470px;
+    max-height: 480px;
 }
 
 .benefit__img{
-    width: 51%;
+    width: 52%;
     margin-top: -16px;
+    margin-right: -26px;
 }
 
 .benefit__info{
