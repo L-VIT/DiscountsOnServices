@@ -25,10 +25,15 @@ h3, h5{
     font-weight: 400;
 }
 
+section{
+    margin-bottom: 120px;
+}
+
 body{
     font-family: 'GothamPro';
     font-weight: 400;
     background-color: #ECF3FB;
+    color: #333333;
 }
 
 header{
@@ -198,18 +203,18 @@ header{
     justify-content: space-between;
 }
 
-.benefit__info{
+.benefit__img-box{
     width: 49%;
-    max-height: 480px;
+    object-fit: cover;
+    border-radius: 32px;
 }
 
 .benefit__img{
-    width: 52%;
-    margin-top: -16px;
-    margin-right: -26px;
+    width: 100%;
 }
 
 .benefit__info{
+    width: 49%;
     padding: 114px 60px 0;
     background-color: #1749B3;
     box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
@@ -251,4 +256,256 @@ header{
     color: #1749B3;
     background-color: rgba(255, 255, 255, 0.8);
     border-color: rgba(255, 255, 255, 0.8);
+}
+
+.choice__item{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+}
+
+.choice__item + .choice__item{
+    margin-top: 16px;
+}
+
+.section-title{
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.choice__item-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice__item-info{
+    max-width: 440px;
+    padding-left: 60px;
+}
+
+.item__title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.item__text{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 38px;
+}
+
+.item__link{
+    display: inline-block;
+    padding: 15px 23px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    font-family: 'GothamPro-Bold';
+    background: #1749B3;
+    border-radius: 16px;
+    border: 1px solid #1749B3;
+}
+
+.work__card-box{
+    margin-bottom: 20px;
+}
+
+.work__card-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__card{
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    border-radius: 32px;
+    padding-left: 36px;
+    height: 300px;
+    width: 32%;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card__img{
+    max-width: 185px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.card__title{
+    font-size: 22px;
+    line-height: 31px;
+    color: #171717;
+    padding-bottom: 25px;
+}
+
+.card__text{
+    max-width: 227px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+
+.invite{
+    background-color: #1749B3;
+    box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    color: #FFFFFF;
+    max-width: 508px;
+}
+
+.invite__title{
+    font-size: 26px;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.invite__text{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.link__box{
+    background-color: #F1F4F8;
+    border-radius: 16px;
+    max-width: 445px;
+    width: 100%;
+}
+
+.link__text{
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #171717;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.link__item{
+    position: relative;
+    padding-right: 29px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 27px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.link__item::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    right: 0px;
+    background-image: url(../images/icons/invite-icon.svg);
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+.link__item span{
+    color: #1749B3;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+
+.link__item:hover span{
+    color: #171717;
+}
+
+.link__item:hover::after{
+    background-image: url(../images/icons/invite-hover.svg);
+}
+
+.link__item--active span{
+    color: #606060;
+}
+
+.link__item.link__item--active::after{
+    background-image: url(../images/icons/invite-act.svg);
+}
+
+.copy_link_mess{
+    line-height:40px;
+    border-radius:5px;
+    background:#1DA1F2;
+    color:#fff;
+    position:fixed;
+    padding:0 15px;
+    z-index:99;
+    bottom:30px;
+    left:50%;
+    margin-left:-120px;
+    display:none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+}
+
+.about__title{
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.about__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.about__img{
+    width: 100%;
+}
+
+.about__img-box{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.about__info{
+    padding: 60px;
+    box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+    background-color: #fff;
+    max-height: 535px;
+    width: 50%;
+}
+
+.about__info-logo{
+    margin-bottom: 32px;
+}
+
+.about__info-text{
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+}
+
+.about__info-text + .about__info-text{
+    margin-top: 32px;
+}
+
+.about__info-text--bold{
+    color: #171717;
+    font-family: 'GothamPro-Bold';
+    font-weight: 700;
 }
