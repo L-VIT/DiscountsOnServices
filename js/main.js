@@ -21,4 +21,12 @@ $(function () {
         $(this).children('.faq__list-content').children('.faq__list-title').next().slideToggle('200');
     });
 
+    $('.login ').on('click', function(){
+        $('.login-popup').addClass('popup--active');
+    });
+    
+    $('.close').on('click', function(){
+        $('.popup--active').removeClass('popup--active');
+    });
+
 });
