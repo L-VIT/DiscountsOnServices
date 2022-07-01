@@ -888,6 +888,7 @@ header{
     right: 25px;
     background-image: url(../images/icons/pass1.svg);
     cursor: pointer;
+    transition: all .3s;
 }
 
 .password-img-box--active.password-img-box{
@@ -951,6 +952,17 @@ header{
     border-radius: 12px;
     max-height: 70px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.sign__btn:hover{
+    background-color: #ECF3FB;
+    border-color:#ECF3FB;
+}
+
+.sign__btn:active{
+    background-color: #FFFFFF;
+    border-color: #DFDFDF;
 }
 
 .sign__btn-box{
