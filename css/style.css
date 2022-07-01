@@ -849,6 +849,7 @@ header{
     letter-spacing: 0.01em;
     color: #1B1B29;
     display: block;
+    position: relative;
 }
 
 .login-input-box + .login-input-box{
@@ -859,7 +860,7 @@ header{
 .login-input{
     width: 100%;
     margin-top: 9px;
-    padding: 15px 23px;
+    padding: 15px 50px 15px 23px;
     background: #F1F4F8;
     border-radius: 12px;
     font-size: 17px;
@@ -876,6 +877,21 @@ header{
 
 .login-input:hover{
     border-color: #838099;
+}
+
+.password-img-box{
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    background-repeat: no-repeat;
+    bottom: 18px;
+    right: 25px;
+    background-image: url(../images/icons/pass1.svg);
+    cursor: pointer;
+}
+
+.password-img-box--active.password-img-box{
+    background-image: url(../images/icons/pass2.svg);
 }
 
 .forget{

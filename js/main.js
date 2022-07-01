@@ -29,4 +29,14 @@ $(function () {
         $('.popup--active').removeClass('popup--active');
     });
 
+    $('.password-img-box').on('click', function(){
+        $(this).toggleClass('password-img-box--active');
+        
+        if ($(this).prev().attr('type') == 'password') {
+            $(this).prev().attr('type', 'text');
+        } else {
+            $(this).prev().attr('type', 'password');
+        }
+    });
+
 });
