@@ -40,6 +40,7 @@ header{
     padding: 2px 0;
     margin-bottom: 60px;
     background-color: #fff;
+    position: relative;
 }
 
 .container{
@@ -57,6 +58,11 @@ header{
 .menu__list{
     display: flex;
     gap: 46px;
+}
+
+.menu-btn{
+    display: none;
+    margin-right: 27px;
 }
 
 .header__logo,
@@ -287,6 +293,7 @@ header{
 .choice__item-info{
     max-width: 440px;
     padding-left: 60px;
+    padding-right: 15px;
 }
 
 .item__title {
@@ -371,17 +378,18 @@ header{
 .info{
     color: #FFFFFF;
     max-width: 508px;
+    padding-right: 10px;
 }
 
 .invite__title{
     font-size: 26px;
-    line-height: 140%;
+    line-height: 36px;
     margin-bottom: 24px;
 }
 
 .invite__text{
     font-size: 16px;
-    line-height: 150%;
+    line-height: 24px;
 }
 
 .link__box{
@@ -389,6 +397,7 @@ header{
     border-radius: 16px;
     max-width: 445px;
     width: 100%;
+    padding: 0 10px;
 }
 
 .link__text{
@@ -1133,4 +1142,131 @@ header{
     background-color: #4B84FD;
     border-color: #4B84FD;
     color: #fff;
+}
+
+.mobile__menu-box{
+    position: absolute;
+    transform: translateY(-200%);
+    transition: all .5s;
+    padding: 24px;
+    background-color: #ECF3FB;
+    width: 100%;
+    box-shadow: 0px 3px 3px #727070;
+}
+
+.mobile__menu-list,
+.mobile__subscription{
+    padding: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(177, 177, 177, 0.2);
+    border-radius: 12px;
+    margin-bottom: 16px;
+
+}
+
+.mobile__menu-item,
+.mobile__subscription-item{
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.mobile__subscription{
+    margin-bottom: 70px;
+}
+
+.mobile__menu-item:hover,
+.mobile__subscription-item:hover{
+    background-color: #F7F7F7;
+}
+
+.mobile__menu-item:hover path{
+    fill: #4E33FF;
+}
+
+.mobile__menu-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mobile-login,
+.mobile-signup{
+    text-align: center;
+    color: #1749B3;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    padding: 12px 10px;
+    border-radius: 12px;
+    border: 1px solid #1749B3;
+    margin-bottom: 5px;
+    transition: all .3s;
+    display: block;
+}
+
+.mobile-login:hover{
+    background-color: #1749B3;
+    color: #fff;
+}
+
+.mobile-login:active{
+    background-color: #4B84FD;
+    border-color: #4B84FD;
+    color: #fff;
+}
+
+.mobile-signup{
+    color: #fff;
+    background-color: #1749B3;
+    margin-bottom: 36px;
+}
+
+.mobile-header-btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.mobile__btn-language{
+    padding-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mobile__btn-language::after{
+    content: "";
+    width: 7px;
+    height: 4px;
+    background-image: url(../images/icons/arrow-down.svg);
+    position: absolute;
+    top: 8px;
+    right: 0;
+    transform: rotateX(180deg);
+    transition: all .5s;
+}
+
+.mobile__btn-language:hover::after{
+    transform: rotateX(0deg);
+}
+
+.mobile__language-list{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    left: -68px;
+    bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+    border-radius: 16px;
+    width: 114px;
+}
+
+.mobile__btn-language:hover .mobile__language-list{
+    visibility: visible;
+    opacity: 1;
 }

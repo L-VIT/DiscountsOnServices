@@ -1,0 +1,223 @@
+@media(max-width:1100px){
+    .menu__list{
+        gap: 20px;
+    }
+    .header__btn-telegram{
+        margin-right: 20px;
+    }
+    .header__btn-language{
+        margin-right: 30px;
+    }
+    .benefit__info{
+        padding-top: 35px;
+    }
+    .item__link{
+        margin-bottom: 20px;
+    }
+    .item__text{
+        margin-bottom: 18px;
+    }
+    .choice__item-img{
+        max-width: 480px;
+    }
+}
+
+@media(max-width:950px){
+    .card__img{
+        max-width: 100px; 
+    }
+    .first-line{
+        align-items: center;
+    }
+    .work__card{
+        padding: 20px;
+    }
+    .work__card{
+        height: auto;
+    }
+    .info{
+        max-width: 275px;
+    }
+    .invite__title {
+        font-size: 22px;
+        line-height: 31px;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:930px){
+    .choice__item-img{
+        max-width: 425px;
+    }
+    .menu,
+    .header__btn-tel,
+    .header__btn-telegram,
+    .header__btn-language,
+    .login{
+        display: none;
+    }
+    .mobile-header-btn-box .header__btn-tel,
+    .mobile-header-btn-box .header__btn-telegram,
+    .mobile-header-btn-box .header__btn-language{
+        display: block;
+    }
+    .mobile-header-btn-box .header__btn-telegram{
+        flex: 1 1 auto;
+    }
+    .menu-btn{
+        display: block;
+        background-image: url(../images/icons/mobile-burg.svg);
+        width: 28px;
+        height: 28px;
+        border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all .3s;
+    }
+    .menu-btn--active{
+        background-image: url(../images/icons/mobile-burg-close.svg);
+    }
+    .mobile__menu{
+        position: relative;
+    }
+    .mobile__menu-box{
+        position: absolute;
+    }
+    .mobile__menu-box--active{
+        transform: translateX(0%);
+        min-height: 100%;
+    }
+    .benefit__info{
+        padding: 20px;
+    }
+    .benefit__title{
+        font-size: 28px;
+        line-height: 39px;
+        margin-bottom: 15px;
+        max-width: 304px;
+    }
+    .benefit__text{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:870px){
+    section{
+        margin-bottom: 100px;
+    }
+    .item__text{
+        display: none;
+    }
+    .item__title {
+        font-size: 22px;
+        line-height: 31px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    .choice__item-img{
+        max-width: 350px;
+    }
+    .card__title {
+        font-size: 19px;
+        line-height: 27px;
+        padding-bottom: 25px;
+    }
+    .copy_text{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .link__text{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .invite{
+        padding: 32px;
+    }
+}
+
+@media(max-width:750px){
+    .benefit__inner{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 16px;
+    }
+    .benefit__start{
+        display: inline-block;
+    }
+    .benefit__info,
+    .benefit__img-box{
+        width: 90%;
+    }
+    .card__text{
+        font-size: 17px;
+        line-height: 26px;
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width:700px){
+    .invite{
+        display: block;
+    }
+    .link__box{
+        max-width: 639px;
+        padding: 28px 33px;
+    }
+    .link__item{
+        margin: 0 auto;
+    }
+    .link__text{
+        margin-top: 0;
+    }
+    .info{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:650px){
+    .choice__item-inner {
+        flex-direction: column-reverse;
+    }
+    .choice__item-img{
+        max-width: 100%;
+    }
+    .item__text{
+        display: block;
+    }
+    .choice__item-info{
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .item__link{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        line-height: 19px;
+        margin-bottom: 32px;
+    }
+    .work__card-box{
+        display: block;
+    }
+    .work__card{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .card__text{
+        max-width: 100%;
+    }
+    .work__card-box{
+        margin-bottom: 16px;
+    }
+    .link__item span{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media(max-width:380px){
+    .header__logo-text{
+        display: none;
+    }
+}
