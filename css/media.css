@@ -1,3 +1,28 @@
+@media(max-height:730px){
+    .popup-login{
+        padding: 20px 40px;
+    }
+    .popup-login__create{
+        margin-bottom: 20px;
+    }
+    .login-input-box + .login-input-box {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .login-btn{
+        padding: 10px 46px;
+    }
+    .login-btn-box{
+        margin-bottom: 20px;
+    }
+    .form-text{
+        margin-bottom: 15px;
+    }
+    .sign__btn-box {
+        margin-bottom: 20px;
+    }
+}
+
 @media(max-width:1220px){
     .logo130{
         display: none;
@@ -318,8 +343,54 @@
     }
 }
 
+@media(max-width:550px){
+    .sign__btn-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sign__btn{
+        padding: 11px 35px;
+    }
+}
+
+@media(max-width:420px){
+    .popup-login{
+        padding: 30px;
+    }
+    .sign__btn img {
+        max-height: 22px;
+    }
+    .sign__btn-box {
+        margin-bottom: 20px;
+    }
+    .popup-login__create-span{
+        display: block;
+    }
+    .popup-login__create {
+        margin-bottom: 25px;
+    }
+    .login-input-box + .login-input-box {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
 @media(max-width:380px){
     .header__logo-text{
         display: none;
+    }
+    .sign__btn{
+        padding: 10px 27px;
+    }
+    .login-btn-box{
+        flex-wrap: wrap;
+    }
+    .login-btn{
+        display: block;
+        width: 100%;
+    }
+    .forget{
+        display: block;
+        margin-bottom: 15px;
     }
 }

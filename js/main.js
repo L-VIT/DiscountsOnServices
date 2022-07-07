@@ -23,7 +23,7 @@ $(function () {
         $(this).children('.faq__list-content').children('.faq__list-title').next().slideToggle('200');
     });
 
-    $('.login ').on('click', function(){
+    $('.login, .mobile-login').on('click', function(){
         //відкриття модального вікна
         $('.login-popup').addClass('popup--active');
     });

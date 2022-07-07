@@ -840,6 +840,7 @@ header{
     right: 40px;
     background-image: url(../images/icons/close.svg);
     transition: all .5s;
+    cursor: pointer;
 }
 
 .close:hover{
