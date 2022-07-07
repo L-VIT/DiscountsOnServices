@@ -508,6 +508,14 @@ header{
     margin-bottom: 32px;
 }
 
+.logo60{
+    display: none;
+}
+
+.logo130{
+    display: inline;
+}
+
 .about__info-text{
     font-size: 18px;
     line-height: 27px;

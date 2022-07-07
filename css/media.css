@@ -1,3 +1,19 @@
+@media(max-width:1220px){
+    .logo130{
+        display: none;
+    }
+    .logo60{
+        display: inline;
+        margin-bottom: 20px;
+    }
+    .about__info{
+        padding: 40px;
+    }
+    .about__info-text + .about__info-text {
+        margin-top: 16px;
+    }
+}
+
 @media(max-width:1100px){
     .menu__list{
         gap: 20px;
@@ -19,6 +35,9 @@
     }
     .choice__item-img{
         max-width: 480px;
+    }
+    .footer__links{
+        max-width: 400px;
     }
 }
 
@@ -42,6 +61,18 @@
         font-size: 22px;
         line-height: 31px;
         margin-bottom: 16px;
+    }
+    .about__info p{
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .about__inner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about__img-box,
+    .about__info{
+        width: 70%;
     }
 }
 
@@ -134,6 +165,38 @@
     .invite{
         padding: 32px;
     }
+    .about__info{
+        padding: 20px;
+    }
+    .faq__list-item{
+        padding: 20px;
+    }
+    .faq__list-content{
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .request__inner{
+        padding: 32px;
+    }
+    .request__info-title {
+        font-size: 19px;
+        line-height: 27px;
+        margin-bottom: 16px;
+    }
+    .request__info-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .request__link{
+        padding: 12px 83px;
+    }
+    .footer__links{
+        max-width: 350px;
+    }
+    .footer__line{
+        padding-top: 12px;
+        border-top: 1px solid rgba(247, 247, 247, 0.5);
+    }
 }
 
 @media(max-width:750px){
@@ -154,6 +217,28 @@
         line-height: 26px;
         margin-bottom: 0px;
     }
+    .footer__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__logo-motto {
+        max-width: 300px;
+    }
+    .footer__logo {
+        margin-bottom: 12px;
+    }
+    .footer__logo-box{
+        margin-bottom: 40px;
+    }
+    .footer__links {
+        max-width: 310px;
+        margin-bottom: 40px;
+    }
+    .footer__btn{
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
 }
 
 @media(max-width:700px){
@@ -172,6 +257,13 @@
     }
     .info{
         margin-bottom: 20px;
+    }
+    .footer__line{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__line p + p{
+        margin-top: 12px;
     }
 }
 
@@ -213,6 +305,16 @@
     .link__item span{
         font-size: 14px;
         line-height: 21px;
+    }
+    .about__img-box,
+    .about__info{
+        width: 100%;
+    }
+    .request__inner{
+        flex-direction: column;
+    }
+    .request__info{
+        margin-bottom: 32px;
     }
 }
 

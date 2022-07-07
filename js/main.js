@@ -54,6 +54,7 @@ $(function () {
     });
 
     $('.menu-btn').on('click', function(){
+        //відкриття/закриття мобільного меню
         $(this).toggleClass('menu-btn--active');
         $('.mobile__menu-box').toggleClass('mobile__menu-box--active');
     });
