@@ -1,5 +1,6 @@
 @media(max-height:730px){
-    .popup-login{
+    .popup-login,
+    .popup-subscription{
         padding: 20px 40px;
     }
     .popup-login__create{
@@ -354,7 +355,8 @@
 }
 
 @media(max-width:420px){
-    .popup-login{
+    .popup-login,
+    .popup-subscription{
         padding: 30px;
     }
     .sign__btn img {

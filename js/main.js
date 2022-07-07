@@ -24,13 +24,24 @@ $(function () {
     });
 
     $('.login, .mobile-login').on('click', function(){
-        //відкриття модального вікна
+        //відкриття модального вікна авторизації
         $('.login-popup').addClass('popup--active');
     });
+
+    $('.plan__content-btn').on('click', function(){
+        //відкриття модального вікна оформлення підписки
+        $('.subscription-popup-box').addClass('popup--active');
+    });
     
-    $('.close').on('click', function(){
+    $('.close, .paid__btn').on('click', function(){
         //закриття модального вікна
         $('.popup--active').removeClass('popup--active');
+        
+        setTimeout(function(){
+            //затримка в 5с, щоб прибрати баг з миттєвим відображенням блоку "application" після закриття модального вікна в блоках payment і paid
+            $('.payment, .paid').removeClass('block--active');
+            $('.application').addClass('block--active');
+        }, 5000);
     });
 
     $('.password-img-box').on('click', function(){
@@ -57,6 +68,12 @@ $(function () {
         //відкриття/закриття мобільного меню
         $(this).toggleClass('menu-btn--active');
         $('.mobile__menu-box').toggleClass('mobile__menu-box--active');
+    });
+
+    $('.subscription__btn').on('click', function(){
+        //переключення по блоках форми оплати підписки
+        $('.block--active').removeClass('block--active');
+        $(this).parent().parent().next().addClass('block--active');
     });
 
 });

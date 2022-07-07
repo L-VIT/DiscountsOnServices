@@ -12,361 +12,433 @@
 </head>
 
 <body>
-    <main class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__logo" href="index.html">
-                        <img class="header__logo-img" src="images/logo-big.png" alt="logo">
-                        <span class="header__logo-text">DiscountsOnServices</span>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img class="header__logo-img" src="images/logo-big.png" alt="logo">
+                    <span class="header__logo-text">DiscountsOnServices</span>
+                </a>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <span class="menu__item-subscriptions">Subscriptions
+                                <ul class="subscriptions-list">
+                                    <li class="subscriptions-list__item">
+                                        <a class="subscriptions-list__link" href="#">Netflix</a>
+                                    </li>
+                                    <li class="subscriptions-list__item">
+                                        <a class="subscriptions-list__link" href="#">YouTube Premium</a>
+                                    </li>
+                                    <li class="subscriptions-list__item">
+                                        <a class="subscriptions-list__link" href="#">Spotify</a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">FAQ</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Support</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__bnt-box">
+                    <a class="header__btn-tel" href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.00401338 20L1.35601 15.032C0.465151 13.5049 -0.00289063 11.768 1.34322e-05 10C1.34322e-05 4.477 4.47701 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C8.23279 20.0029 6.49667 19.5352 4.97001 18.645L0.00401338 20ZM6.39101 5.308C6.26188 5.31602 6.13569 5.35003 6.02001 5.408C5.91153 5.46943 5.81251 5.54622 5.72601 5.636C5.60601 5.749 5.53801 5.847 5.46501 5.942C5.09542 6.423 4.89662 7.01342 4.90001 7.62C4.90201 8.11 5.03001 8.587 5.23001 9.033C5.63901 9.935 6.31201 10.89 7.20101 11.775C7.41501 11.988 7.62401 12.202 7.84901 12.401C8.9524 13.3725 10.2673 14.073 11.689 14.447L12.258 14.534C12.443 14.544 12.628 14.53 12.814 14.521C13.1053 14.506 13.3896 14.4271 13.647 14.29C13.813 14.202 13.891 14.158 14.03 14.07C14.03 14.07 14.073 14.042 14.155 13.98C14.29 13.88 14.373 13.809 14.485 13.692C14.568 13.606 14.64 13.505 14.695 13.39C14.773 13.227 14.851 12.916 14.883 12.657C14.907 12.459 14.9 12.351 14.897 12.284C14.893 12.177 14.804 12.066 14.707 12.019L14.125 11.758C14.125 11.758 13.255 11.379 12.724 11.137C12.668 11.1126 12.608 11.0987 12.547 11.096C12.4786 11.089 12.4095 11.0967 12.3443 11.1186C12.2791 11.1405 12.2193 11.1761 12.169 11.223V11.221C12.164 11.221 12.097 11.278 11.374 12.154C11.3325 12.2098 11.2754 12.2519 11.2098 12.2751C11.1443 12.2982 11.0733 12.3013 11.006 12.284C10.9409 12.2666 10.877 12.2445 10.815 12.218C10.691 12.166 10.648 12.146 10.563 12.109L10.558 12.107C9.98592 11.8572 9.45624 11.5198 8.98801 11.107C8.86201 10.997 8.74501 10.877 8.62501 10.761C8.23159 10.3842 7.88873 9.95801 7.60501 9.493L7.54601 9.398C7.50364 9.33416 7.46937 9.2653 7.44401 9.193C7.40601 9.046 7.50501 8.928 7.50501 8.928C7.50501 8.928 7.74801 8.662 7.86101 8.518C7.9551 8.39832 8.04289 8.27382 8.12401 8.145C8.24201 7.955 8.27901 7.76 8.21701 7.609C7.93701 6.925 7.64701 6.244 7.34901 5.568C7.29001 5.434 7.11501 5.338 6.95601 5.319C6.90201 5.313 6.84801 5.307 6.79401 5.303C6.65972 5.29633 6.52515 5.29766 6.39101 5.307V5.308Z"
+                                fill="#333333" />
+                        </svg>
                     </a>
-
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <span class="menu__item-subscriptions">Subscriptions
-                                    <ul class="subscriptions-list">
-                                        <li class="subscriptions-list__item">
-                                            <a class="subscriptions-list__link" href="#">Netflix</a>
-                                        </li>
-                                        <li class="subscriptions-list__item">
-                                            <a class="subscriptions-list__link" href="#">YouTube Premium</a>
-                                        </li>
-                                        <li class="subscriptions-list__item">
-                                            <a class="subscriptions-list__link" href="#">Spotify</a>
-                                        </li>
-                                    </ul>
-                                </span>
-                            </li>
-                            <li class="menu__item"><a class="menu__item-link" href="#">FAQ</a></li>
-                            <li class="menu__item"><a class="menu__item-link" href="#">Support</a></li>
-                            <li class="menu__item"><a class="menu__item-link" href="#">About</a></li>
+                    <a class="header__btn-telegram" href="#">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM6.89 11.17L6.903 11.163L7.773 14.033C7.885 14.344 8.039 14.4 8.226 14.374C8.414 14.349 8.513 14.248 8.636 14.13L9.824 12.982L12.374 14.87C12.84 15.127 13.175 14.994 13.291 14.438L14.948 6.616C15.131 5.888 14.811 5.596 14.246 5.828L4.513 9.588C3.849 9.854 3.853 10.226 4.393 10.391L6.89 11.171V11.17Z"
+                                fill="#333333" />
+                        </svg>
+                    </a>
+                    <span class="header__btn-language"> EU
+                        <ul class="language__list">
+                            <li class="language__list-item"><button class="language-btn">English</button></li>
+                            <li class="language__list-item"><button class="language-btn">Ukraine</button></li>
+                            <li class="language__list-item"><button class="language-btn">Russian</button></li>
                         </ul>
-                    </nav>
+                    </span>
+                    <span class="login btn">Log in</span>
+                </div>
 
-                    <div class="header__bnt-box">
-                        <a class="header__btn-tel" href="#">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.00401338 20L1.35601 15.032C0.465151 13.5049 -0.00289063 11.768 1.34322e-05 10C1.34322e-05 4.477 4.47701 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C8.23279 20.0029 6.49667 19.5352 4.97001 18.645L0.00401338 20ZM6.39101 5.308C6.26188 5.31602 6.13569 5.35003 6.02001 5.408C5.91153 5.46943 5.81251 5.54622 5.72601 5.636C5.60601 5.749 5.53801 5.847 5.46501 5.942C5.09542 6.423 4.89662 7.01342 4.90001 7.62C4.90201 8.11 5.03001 8.587 5.23001 9.033C5.63901 9.935 6.31201 10.89 7.20101 11.775C7.41501 11.988 7.62401 12.202 7.84901 12.401C8.9524 13.3725 10.2673 14.073 11.689 14.447L12.258 14.534C12.443 14.544 12.628 14.53 12.814 14.521C13.1053 14.506 13.3896 14.4271 13.647 14.29C13.813 14.202 13.891 14.158 14.03 14.07C14.03 14.07 14.073 14.042 14.155 13.98C14.29 13.88 14.373 13.809 14.485 13.692C14.568 13.606 14.64 13.505 14.695 13.39C14.773 13.227 14.851 12.916 14.883 12.657C14.907 12.459 14.9 12.351 14.897 12.284C14.893 12.177 14.804 12.066 14.707 12.019L14.125 11.758C14.125 11.758 13.255 11.379 12.724 11.137C12.668 11.1126 12.608 11.0987 12.547 11.096C12.4786 11.089 12.4095 11.0967 12.3443 11.1186C12.2791 11.1405 12.2193 11.1761 12.169 11.223V11.221C12.164 11.221 12.097 11.278 11.374 12.154C11.3325 12.2098 11.2754 12.2519 11.2098 12.2751C11.1443 12.2982 11.0733 12.3013 11.006 12.284C10.9409 12.2666 10.877 12.2445 10.815 12.218C10.691 12.166 10.648 12.146 10.563 12.109L10.558 12.107C9.98592 11.8572 9.45624 11.5198 8.98801 11.107C8.86201 10.997 8.74501 10.877 8.62501 10.761C8.23159 10.3842 7.88873 9.95801 7.60501 9.493L7.54601 9.398C7.50364 9.33416 7.46937 9.2653 7.44401 9.193C7.40601 9.046 7.50501 8.928 7.50501 8.928C7.50501 8.928 7.74801 8.662 7.86101 8.518C7.9551 8.39832 8.04289 8.27382 8.12401 8.145C8.24201 7.955 8.27901 7.76 8.21701 7.609C7.93701 6.925 7.64701 6.244 7.34901 5.568C7.29001 5.434 7.11501 5.338 6.95601 5.319C6.90201 5.313 6.84801 5.307 6.79401 5.303C6.65972 5.29633 6.52515 5.29766 6.39101 5.307V5.308Z"
-                                    fill="#333333" />
-                            </svg>
-                        </a>
-                        <a class="header__btn-telegram" href="#">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM6.89 11.17L6.903 11.163L7.773 14.033C7.885 14.344 8.039 14.4 8.226 14.374C8.414 14.349 8.513 14.248 8.636 14.13L9.824 12.982L12.374 14.87C12.84 15.127 13.175 14.994 13.291 14.438L14.948 6.616C15.131 5.888 14.811 5.596 14.246 5.828L4.513 9.588C3.849 9.854 3.853 10.226 4.393 10.391L6.89 11.171V11.17Z"
-                                    fill="#333333" />
-                            </svg>
-                        </a>
-                        <span class="header__btn-language"> EU
-                            <ul class="language__list">
-                                <li class="language__list-item"><button class="language-btn">English</button></li>
-                                <li class="language__list-item"><button class="language-btn">Ukraine</button></li>
-                                <li class="language__list-item"><button class="language-btn">Russian</button></li>
+            </div>
+        </div>
+    </header>
+
+    <section class="plan">
+        <div class="container">
+            <h1 class="plan__title">Choose a Netflix Plan</h1>
+            <p class="plan__subtitle">Listen without limits at a bargain price</p>
+            <div class="tabs__wrapper plan__tabs-wrapper">
+                <div class="tabs plan__tabs">
+                    <a class="tab plan__tab tab--active" href="#netflix1">6 months</a>
+                    <a class="tab plan__tab" href="#netflix2">12 months</a>
+                </div>
+            </div>
+            <div class="tabs__container plan__tabs-container">
+                <div id="netflix1" class="tabs-content plan__tab-content tabs-content--active">
+                    <div class="tab-content__inner">
+                        <div class="plan__content-item">
+                            <h2 class="plan__content-title">Basic</h2>
+                            <ul class="plan__list">
+                                <li class="plan__list-item">Ad-free music listening</li>
+                                <li class="plan__list-item">Play anywhere - even offline</li>
+                                <li class="plan__list-item">On-demand playback</li>
                             </ul>
-                        </span>
-                        <span class="login btn">Log in</span>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
-        <section class="plan">
-            <div class="container">
-                <h1 class="plan__title">Choose a Netflix Plan</h1>
-                <p class="plan__subtitle">Listen without limits at a bargain price</p>
-                <div class="tabs__wrapper plan__tabs-wrapper">
-                    <div class="tabs plan__tabs">
-                        <a class="tab plan__tab tab--active" href="#netflix1">6 months</a>
-                        <a class="tab plan__tab" href="#netflix2">12 months</a>
-                    </div>
-                </div>
-                <div class="tabs__container plan__tabs-container">
-                    <div id="netflix1" class="tabs-content plan__tab-content tabs-content--active">
-                        <div class="tab-content__inner">
-                            <div class="plan__content-item">
-                                <h2 class="plan__content-title">Basic</h2>
-                                <ul class="plan__list">
-                                    <li class="plan__list-item">Ad-free music listening</li>
-                                    <li class="plan__list-item">Play anywhere - even offline</li>
-                                    <li class="plan__list-item">On-demand playback</li>
-                                </ul>
-                                <p class="plan__content-price"><span>45</span></p>
-                                <button class="plan__content-btn">Get started</button>
-                            </div>
-                            <div class="plan__content-item">
-                                <h2 class="plan__content-title">Standart</h2>
-                                <ul class="plan__list">
-                                    <li class="plan__list-item">Ad-free music listening</li>
-                                    <li class="plan__list-item">Play anywhere - even offline</li>
-                                    <li class="plan__list-item">On-demand playback</li>
-                                </ul>
-                                <p class="plan__content-price"><span>60</span></p>
-                                <button class="plan__content-btn">Get started</button>
-                            </div>
-                            <div class="plan__content-item">
-                                <h2 class="plan__content-title">Premium</h2>
-                                <ul class="plan__list">
-                                    <li class="plan__list-item">Ad-free music listening</li>
-                                    <li class="plan__list-item">Play anywhere - even offline</li>
-                                    <li class="plan__list-item">On-demand playback</li>
-                                </ul>
-                                <p class="plan__content-price"><span>80</span></p>
-                                <button class="plan__content-btn">Get started</button>
-                            </div>
+                            <p class="plan__content-price"><span>45</span></p>
+                            <button class="plan__content-btn">Get started</button>
                         </div>
-                    </div>
-                    <div id="netflix2" class="tabs-content plan__tab-content">
-                        <div class="tab-content__inner">
-                            <div class="plan__content-item">
-                                <h2 class="plan__content-title">Basic</h2>
-                                <ul class="plan__list">
-                                    <li class="plan__list-item">Ad-free music listening</li>
-                                    <li class="plan__list-item">Play anywhere - even offline</li>
-                                    <li class="plan__list-item">On-demand playback</li>
-                                </ul>
-                                <p class="plan__content-price"><span>80</span></p>
-                                <button class="plan__content-btn">Get started</button>
-                            </div>
-                            <div class="plan__content-item">
-                                <h2 class="plan__content-title">Standart</h2>
-                                <ul class="plan__list">
-                                    <li class="plan__list-item">Ad-free music listening</li>
-                                    <li class="plan__list-item">Play anywhere - even offline</li>
-                                    <li class="plan__list-item">On-demand playback</li>
-                                </ul>
-                                <p class="plan__content-price"><span>150</span></p>
-                                <button class="plan__content-btn">Get started</button>
-                            </div>
-                            <div class="plan__content-item">
-                                <h2 class="plan__content-title">Premium</h2>
-                                <ul class="plan__list">
-                                    <li class="plan__list-item">Ad-free music listening</li>
-                                    <li class="plan__list-item">Play anywhere - even offline</li>
-                                    <li class="plan__list-item">On-demand playback</li>
-                                </ul>
-                                <p class="plan__content-price"><span>140</span></p>
-                                <button class="plan__content-btn">Get started</button>
-                            </div>
+                        <div class="plan__content-item">
+                            <h2 class="plan__content-title">Standart</h2>
+                            <ul class="plan__list">
+                                <li class="plan__list-item">Ad-free music listening</li>
+                                <li class="plan__list-item">Play anywhere - even offline</li>
+                                <li class="plan__list-item">On-demand playback</li>
+                            </ul>
+                            <p class="plan__content-price"><span>60</span></p>
+                            <button class="plan__content-btn">Get started</button>
+                        </div>
+                        <div class="plan__content-item">
+                            <h2 class="plan__content-title">Premium</h2>
+                            <ul class="plan__list">
+                                <li class="plan__list-item">Ad-free music listening</li>
+                                <li class="plan__list-item">Play anywhere - even offline</li>
+                                <li class="plan__list-item">On-demand playback</li>
+                            </ul>
+                            <p class="plan__content-price"><span>80</span></p>
+                            <button class="plan__content-btn">Get started</button>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </section>
-
-        <section class="work">
-            <div class="container">
-
-                <div class="invite">
-                    <div class="info">
-                        <h3 class="invite__title">Invite friends</h3>
-                        <p class="invite__text">
-                            Starting today up to 50% for NETFLIX, YOUTUBE, SPOTIFY subscriptions with a secure payment from PAYPAL
-                        </p>
-                    </div>
-                    <div class="link__box">
-                        <p class="link__text">Click on the link</p>
-                        <button class="link__item">
-                            <span class="copy_text">Discounts On Services</span>
-                        </button>
-                        <div class="copy_link_mess">Скопировано в буфер обмена</div>
+                <div id="netflix2" class="tabs-content plan__tab-content">
+                    <div class="tab-content__inner">
+                        <div class="plan__content-item">
+                            <h2 class="plan__content-title">Basic</h2>
+                            <ul class="plan__list">
+                                <li class="plan__list-item">Ad-free music listening</li>
+                                <li class="plan__list-item">Play anywhere - even offline</li>
+                                <li class="plan__list-item">On-demand playback</li>
+                            </ul>
+                            <p class="plan__content-price"><span>80</span></p>
+                            <button class="plan__content-btn">Get started</button>
+                        </div>
+                        <div class="plan__content-item">
+                            <h2 class="plan__content-title">Standart</h2>
+                            <ul class="plan__list">
+                                <li class="plan__list-item">Ad-free music listening</li>
+                                <li class="plan__list-item">Play anywhere - even offline</li>
+                                <li class="plan__list-item">On-demand playback</li>
+                            </ul>
+                            <p class="plan__content-price"><span>150</span></p>
+                            <button class="plan__content-btn">Get started</button>
+                        </div>
+                        <div class="plan__content-item">
+                            <h2 class="plan__content-title">Premium</h2>
+                            <ul class="plan__list">
+                                <li class="plan__list-item">Ad-free music listening</li>
+                                <li class="plan__list-item">Play anywhere - even offline</li>
+                                <li class="plan__list-item">On-demand playback</li>
+                            </ul>
+                            <p class="plan__content-price"><span>140</span></p>
+                            <button class="plan__content-btn">Get started</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="faq">
-            <div class="container">
-                <h2 class="faq__title">FAQ</h2>
-                <ul class="faq__list">
-                    <li class="faq__list-item">
-                        <div class="faq__list-content">
-                            <p class="faq__list-title">
-                                The set time has passed, but the invoice has not yet arrived, what should I do?
-                            </p>
-                            <p class="faq__list-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nihil eum libero accusamus. Cupiditate quos voluptatum dolores veniam maiores vel porro? Optio saepe illo inventore laudantium blanditiis quasi reiciendis consequatur!
-                            </p>
-                        </div>
-                        <div class="faq__list-btn"></div>
-                    </li>
-                    <li class="faq__list-item">
-                        <div class="faq__list-content">
-                            <p class="faq__list-title">
-                                Can I change my Netflix account email and password after purchase?
-                            </p>
-                            <p class="faq__list-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias eaque, nihil saepe unde quas quisquam quam omnis repellat pariatur vero, atque delectus a tempore. Aperiam commodi laborum ad hic.
-                                Omnis accusamus dolores accusantium molestias. Culpa maxime deleniti non harum ullam voluptatibus enim facere soluta possimus, dolorem obcaecati consequatur ipsum totam! Voluptates mollitia ea fugit voluptatibus facilis debitis nesciunt excepturi.
-                            </p>
-                        </div>
-                        <div class="faq__list-btn"></div>
-                    </li>
-                    <li class="faq__list-item">
-                        <div class="faq__list-content">
-                            <p class="faq__list-title">
-                                Can I add a phone number for password recovery?
-                            </p>
-                            <p class="faq__list-text">Payment options we currently have: PayPal, Bitcoin.</p>
-                        </div>
-                        <div class="faq__list-btn"></div>
-                    </li>
-                    <li class="faq__list-item">
-                        <div class="faq__list-content">
-                            <p class="faq__list-title">
-                                How soon will I receive the account information I ordered?
-                            </p>
-                            <p class="faq__list-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur voluptatem qui tempore hic nam consequuntur numquam obcaecati earum fugit dolore, magnam nobis tempora veniam nulla! Inventore minus dolor consequuntur.
-                            </p>
-                        </div>
-                        <div class="faq__list-btn"></div>
-                    </li>
-                    <li class="faq__list-item">
-                        <div class="faq__list-content">
-                            <p class="faq__list-title">
-                                How to pay?
-                            </p>
-                            <p class="faq__list-text">Payment options we currently have: PayPal, Bitcoin.</p>
-                        </div>
-                        <div class="faq__list-btn"></div>
-                    </li>
-                </ul>
-                <div class="support-box">
-                    <a class="support" href="#">Support</a>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__content">
-                        <div class="footer__logo-box">
-                            <a class="footer__logo">
-                                <img class="footer__logo-img" src="images/logo-footer.svg" alt="logo">
-                                <span class="footer__logo-text">DiscountsOnServices</span>
-                            </a>
-                            <p class="footer__logo-motto">It's simple, fast and economical</p>
-                        </div>
-                        <div class="footer__links">
-                            <div class="footer__subscriptions">
-                                <ul class="subscriptions__list">
-                                    <li class="subscriptions__list-item footer-list-title">Subscriptions</li>
-                                    <li class="subscriptions__list-item">
-                                        <a class="list-link" href="#">Netflix</a>
-                                    </li>
-                                    <li class="subscriptions__list-item">
-                                        <a class="list-link" href="#">YouTube Premium</a>
-                                    </li>
-                                    <li class="subscriptions__list-item">
-                                        <a class="list-link" href="#">Spotify</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer__nav">
-                                <ul class="nav__list">
-                                    <li class="nav__list-item footer-list-title">Site navigation</li>
-                                    <li class="nav__list-item">
-                                        <a class="list-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav__list-item">
-                                        <a class="list-link" href="#">FAQ</a>
-                                    </li>
-                                    <li class="nav__list-item">
-                                        <a class="list-link" href="#">Support</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer__btn">
-                            <div class="footer__btn-box">
-                                <a class="footer__btn-tel" href="#">
-                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.340673 33.6663L2.59401 25.3863C1.10924 22.8411 0.329167 19.9463 0.334007 16.9997C0.334007 7.79467 7.79567 0.333008 17.0007 0.333008C26.2057 0.333008 33.6673 7.79467 33.6673 16.9997C33.6673 26.2047 26.2057 33.6663 17.0007 33.6663C14.0553 33.6711 11.1618 32.8916 8.61734 31.408L0.340673 33.6663ZM10.9857 9.17967C10.7704 9.19304 10.5601 9.24973 10.3673 9.34634C10.1865 9.44872 10.0215 9.57672 9.87734 9.72634C9.67734 9.91467 9.56401 10.078 9.44234 10.2363C8.82636 11.038 8.49502 12.022 8.50067 13.033C8.50401 13.8497 8.71734 14.6447 9.05067 15.388C9.73234 16.8913 10.854 18.483 12.3357 19.958C12.6923 20.313 13.0407 20.6697 13.4157 21.0013C15.2547 22.6204 17.4461 23.7881 19.8157 24.4113L20.764 24.5563C21.0723 24.573 21.3807 24.5497 21.6907 24.5347C22.1761 24.5096 22.65 24.3782 23.079 24.1497C23.3557 24.003 23.4857 23.9297 23.7173 23.783C23.7173 23.783 23.789 23.7363 23.9257 23.633C24.1507 23.4663 24.289 23.348 24.4757 23.153C24.614 23.0097 24.734 22.8413 24.8257 22.6497C24.9557 22.378 25.0857 21.8597 25.139 21.428C25.179 21.098 25.1673 20.918 25.1623 20.8063C25.1557 20.628 25.0073 20.443 24.8457 20.3647L23.8757 19.9297C23.8757 19.9297 22.4257 19.298 21.5407 18.8947C21.4474 18.854 21.3474 18.8308 21.2457 18.8263C21.1316 18.8146 21.0164 18.8275 20.9078 18.864C20.7991 18.9005 20.6995 18.9598 20.6157 19.038V19.0347C20.6073 19.0347 20.4957 19.1297 19.2907 20.5897C19.2215 20.6826 19.1262 20.7528 19.017 20.7914C18.9078 20.83 18.7895 20.8352 18.6773 20.8063C18.5687 20.7773 18.4624 20.7405 18.359 20.6963C18.1523 20.6097 18.0807 20.5763 17.939 20.5147L17.9307 20.5113C16.9772 20.095 16.0944 19.5328 15.314 18.8447C15.104 18.6613 14.909 18.4613 14.709 18.268C14.0533 17.6401 13.4819 16.9297 13.009 16.1547L12.9107 15.9963C12.84 15.8899 12.7829 15.7752 12.7407 15.6547C12.6773 15.4097 12.8423 15.213 12.8423 15.213C12.8423 15.213 13.2473 14.7697 13.4357 14.5297C13.5925 14.3302 13.7388 14.1227 13.874 13.908C14.0707 13.5913 14.1323 13.2663 14.029 13.0147C13.5623 11.8747 13.079 10.7397 12.5823 9.61301C12.484 9.38967 12.1923 9.22967 11.9273 9.19801C11.8373 9.18801 11.7473 9.17801 11.6573 9.17134C11.4335 9.16022 11.2092 9.16245 10.9857 9.17801V9.17967Z" fill="white"/>
-                                        </svg>
-                                </a>
-                                <a class="footer__btn-telegram" href="#">
-                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.0007 33.6663C7.79565 33.6663 0.333984 26.2047 0.333984 16.9997C0.333984 7.79467 7.79565 0.333008 17.0007 0.333008C26.2057 0.333008 33.6673 7.79467 33.6673 16.9997C33.6673 26.2047 26.2057 33.6663 17.0007 33.6663ZM11.8173 18.9497L11.839 18.938L13.289 23.7213C13.4757 24.2397 13.7323 24.333 14.044 24.2897C14.3573 24.248 14.5223 24.0797 14.7273 23.883L16.7073 21.9697L20.9573 25.1163C21.734 25.5447 22.2923 25.323 22.4857 24.3963L25.2473 11.3597C25.5523 10.1463 25.019 9.65967 24.0773 10.0463L7.85565 16.313C6.74898 16.7563 6.75565 17.3763 7.65565 17.6513L11.8173 18.9513V18.9497Z" fill="white"/>
-                                        </svg>                                        
-                                </a>
-                            </div>
-                            <div class="footer__language-box">
-                                <span class="footer__btn-language"> EU
-                                    <ul class="footer__language-list">
-                                        <li class="language__list-item"><button class="language-btn">English</button></li>
-                                        <li class="language__list-item"><button class="language-btn">Ukraine</button></li>
-                                        <li class="language__list-item"><button class="language-btn">Russian</button></li>
-                                    </ul>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ############ -->
-                    <div class="footer__line">
-                        <p class="footer__line-item">
-                            <a href="#">Privacy Policy</a>
-                        </p>
-                        <p class="footer__line-item">Copyright 2022 © All Rights Reserved</p>
-                        <p class="footer__line-item">Developed by Vitalii O.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <section class="work">
+        <div class="container">
 
-
-        <!-- popup -->
-        <div class="popup login-popup">
-            <div class="popup__body">
-                <div class="popup__content popup-login">
-                    <h2 class="popup-login__title">Log in</h2>
-                    <div class="close"></div>
-                    <p class="popup-login__create">
-                        New user? 
-                        <span class="popup-login__create-span">Create an account</span>
+            <div class="invite">
+                <div class="info">
+                    <h3 class="invite__title">Invite friends</h3>
+                    <p class="invite__text">
+                        Starting today up to 50% for NETFLIX, YOUTUBE, SPOTIFY subscriptions with a secure payment from
+                        PAYPAL
                     </p>
-                    <form>
-                        <span class="login-input-box">
-                            Email Address
-                            <input class="login-input" type="text" placeholder="Enter your e-mail">
-                        </span>
-                        <span class="login-input-box">
-                            Password
-                            <input class="login-input" type="password" placeholder="********">
-                            <div class="password-img-box"></div>
-                        </span>
-                        <div class="login-btn-box">
-                            <a class="forget" href="#">Forgot password?</a>
-                            <button class="login-btn btn" type="submit">Log in</button>
-                        </div>
-                        <p class="form-text">Or sign in with</p>
-                        <div class="sign__btn-box">
-                            <button class="sign__btn">
-                                <img src="images/icons/google.svg" alt="">
-                            </button>
-                            <button class="sign__btn">
-                                <img src="images/icons/fb.svg" alt="">
-                            </button>
-                            <button class="sign__btn">
-                                <img src="images/icons/apple.svg" alt="">
-                            </button>
-                        </div>
-                        <p class="protected-text">
-                            Protected by reCAPTCHA and subject to the Google <a href="#">Privacy Policy</a> and 
-                            <a href="#">Terms of Service</a>.
-                        </p>
-                    </form>
+                </div>
+                <div class="link__box">
+                    <p class="link__text">Click on the link</p>
+                    <button class="link__item">
+                        <span class="copy_text">Discounts On Services</span>
+                    </button>
+                    <div class="copy_link_mess">Скопировано в буфер обмена</div>
                 </div>
             </div>
         </div>
+    </section>
 
-    </main>
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq__title">FAQ</h2>
+            <ul class="faq__list">
+                <li class="faq__list-item">
+                    <div class="faq__list-content">
+                        <p class="faq__list-title">
+                            The set time has passed, but the invoice has not yet arrived, what should I do?
+                        </p>
+                        <p class="faq__list-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nihil eum libero accusamus.
+                            Cupiditate quos voluptatum dolores veniam maiores vel porro? Optio saepe illo inventore
+                            laudantium blanditiis quasi reiciendis consequatur!
+                        </p>
+                    </div>
+                    <div class="faq__list-btn"></div>
+                </li>
+                <li class="faq__list-item">
+                    <div class="faq__list-content">
+                        <p class="faq__list-title">
+                            Can I change my Netflix account email and password after purchase?
+                        </p>
+                        <p class="faq__list-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestias eaque,
+                            nihil saepe unde quas quisquam quam omnis repellat pariatur vero, atque delectus a tempore.
+                            Aperiam commodi laborum ad hic.
+                            Omnis accusamus dolores accusantium molestias. Culpa maxime deleniti non harum ullam
+                            voluptatibus enim facere soluta possimus, dolorem obcaecati consequatur ipsum totam!
+                            Voluptates mollitia ea fugit voluptatibus facilis debitis nesciunt excepturi.
+                        </p>
+                    </div>
+                    <div class="faq__list-btn"></div>
+                </li>
+                <li class="faq__list-item">
+                    <div class="faq__list-content">
+                        <p class="faq__list-title">
+                            Can I add a phone number for password recovery?
+                        </p>
+                        <p class="faq__list-text">Payment options we currently have: PayPal, Bitcoin.</p>
+                    </div>
+                    <div class="faq__list-btn"></div>
+                </li>
+                <li class="faq__list-item">
+                    <div class="faq__list-content">
+                        <p class="faq__list-title">
+                            How soon will I receive the account information I ordered?
+                        </p>
+                        <p class="faq__list-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur voluptatem
+                            qui tempore hic nam consequuntur numquam obcaecati earum fugit dolore, magnam nobis tempora
+                            veniam nulla! Inventore minus dolor consequuntur.
+                        </p>
+                    </div>
+                    <div class="faq__list-btn"></div>
+                </li>
+                <li class="faq__list-item">
+                    <div class="faq__list-content">
+                        <p class="faq__list-title">
+                            How to pay?
+                        </p>
+                        <p class="faq__list-text">Payment options we currently have: PayPal, Bitcoin.</p>
+                    </div>
+                    <div class="faq__list-btn"></div>
+                </li>
+            </ul>
+            <div class="support-box">
+                <a class="support" href="#">Support</a>
+            </div>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <div class="footer__logo-box">
+                        <a class="footer__logo">
+                            <img class="footer__logo-img" src="images/logo-footer.svg" alt="logo">
+                            <span class="footer__logo-text">DiscountsOnServices</span>
+                        </a>
+                        <p class="footer__logo-motto">It's simple, fast and economical</p>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__subscriptions">
+                            <ul class="subscriptions__list">
+                                <li class="subscriptions__list-item footer-list-title">Subscriptions</li>
+                                <li class="subscriptions__list-item">
+                                    <a class="list-link" href="#">Netflix</a>
+                                </li>
+                                <li class="subscriptions__list-item">
+                                    <a class="list-link" href="#">YouTube Premium</a>
+                                </li>
+                                <li class="subscriptions__list-item">
+                                    <a class="list-link" href="#">Spotify</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav">
+                            <ul class="nav__list">
+                                <li class="nav__list-item footer-list-title">Site navigation</li>
+                                <li class="nav__list-item">
+                                    <a class="list-link" href="#">About</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="list-link" href="#">FAQ</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="list-link" href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__btn">
+                        <div class="footer__btn-box">
+                            <a class="footer__btn-tel" href="#">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.340673 33.6663L2.59401 25.3863C1.10924 22.8411 0.329167 19.9463 0.334007 16.9997C0.334007 7.79467 7.79567 0.333008 17.0007 0.333008C26.2057 0.333008 33.6673 7.79467 33.6673 16.9997C33.6673 26.2047 26.2057 33.6663 17.0007 33.6663C14.0553 33.6711 11.1618 32.8916 8.61734 31.408L0.340673 33.6663ZM10.9857 9.17967C10.7704 9.19304 10.5601 9.24973 10.3673 9.34634C10.1865 9.44872 10.0215 9.57672 9.87734 9.72634C9.67734 9.91467 9.56401 10.078 9.44234 10.2363C8.82636 11.038 8.49502 12.022 8.50067 13.033C8.50401 13.8497 8.71734 14.6447 9.05067 15.388C9.73234 16.8913 10.854 18.483 12.3357 19.958C12.6923 20.313 13.0407 20.6697 13.4157 21.0013C15.2547 22.6204 17.4461 23.7881 19.8157 24.4113L20.764 24.5563C21.0723 24.573 21.3807 24.5497 21.6907 24.5347C22.1761 24.5096 22.65 24.3782 23.079 24.1497C23.3557 24.003 23.4857 23.9297 23.7173 23.783C23.7173 23.783 23.789 23.7363 23.9257 23.633C24.1507 23.4663 24.289 23.348 24.4757 23.153C24.614 23.0097 24.734 22.8413 24.8257 22.6497C24.9557 22.378 25.0857 21.8597 25.139 21.428C25.179 21.098 25.1673 20.918 25.1623 20.8063C25.1557 20.628 25.0073 20.443 24.8457 20.3647L23.8757 19.9297C23.8757 19.9297 22.4257 19.298 21.5407 18.8947C21.4474 18.854 21.3474 18.8308 21.2457 18.8263C21.1316 18.8146 21.0164 18.8275 20.9078 18.864C20.7991 18.9005 20.6995 18.9598 20.6157 19.038V19.0347C20.6073 19.0347 20.4957 19.1297 19.2907 20.5897C19.2215 20.6826 19.1262 20.7528 19.017 20.7914C18.9078 20.83 18.7895 20.8352 18.6773 20.8063C18.5687 20.7773 18.4624 20.7405 18.359 20.6963C18.1523 20.6097 18.0807 20.5763 17.939 20.5147L17.9307 20.5113C16.9772 20.095 16.0944 19.5328 15.314 18.8447C15.104 18.6613 14.909 18.4613 14.709 18.268C14.0533 17.6401 13.4819 16.9297 13.009 16.1547L12.9107 15.9963C12.84 15.8899 12.7829 15.7752 12.7407 15.6547C12.6773 15.4097 12.8423 15.213 12.8423 15.213C12.8423 15.213 13.2473 14.7697 13.4357 14.5297C13.5925 14.3302 13.7388 14.1227 13.874 13.908C14.0707 13.5913 14.1323 13.2663 14.029 13.0147C13.5623 11.8747 13.079 10.7397 12.5823 9.61301C12.484 9.38967 12.1923 9.22967 11.9273 9.19801C11.8373 9.18801 11.7473 9.17801 11.6573 9.17134C11.4335 9.16022 11.2092 9.16245 10.9857 9.17801V9.17967Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a class="footer__btn-telegram" href="#">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.0007 33.6663C7.79565 33.6663 0.333984 26.2047 0.333984 16.9997C0.333984 7.79467 7.79565 0.333008 17.0007 0.333008C26.2057 0.333008 33.6673 7.79467 33.6673 16.9997C33.6673 26.2047 26.2057 33.6663 17.0007 33.6663ZM11.8173 18.9497L11.839 18.938L13.289 23.7213C13.4757 24.2397 13.7323 24.333 14.044 24.2897C14.3573 24.248 14.5223 24.0797 14.7273 23.883L16.7073 21.9697L20.9573 25.1163C21.734 25.5447 22.2923 25.323 22.4857 24.3963L25.2473 11.3597C25.5523 10.1463 25.019 9.65967 24.0773 10.0463L7.85565 16.313C6.74898 16.7563 6.75565 17.3763 7.65565 17.6513L11.8173 18.9513V18.9497Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__language-box">
+                            <span class="footer__btn-language"> EU
+                                <ul class="footer__language-list">
+                                    <li class="language__list-item"><button class="language-btn">English</button></li>
+                                    <li class="language__list-item"><button class="language-btn">Ukraine</button></li>
+                                    <li class="language__list-item"><button class="language-btn">Russian</button></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############ -->
+                <div class="footer__line">
+                    <p class="footer__line-item">
+                        <a href="#">Privacy Policy</a>
+                    </p>
+                    <p class="footer__line-item">Copyright 2022 © All Rights Reserved</p>
+                    <p class="footer__line-item">Developed by Vitalii O.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- popup -->
+    <div class="popup login-popup">
+        <div class="popup__body">
+            <div class="popup__content popup-login">
+                <h2 class="popup-login__title">Log in</h2>
+                <div class="close"></div>
+                <p class="popup-login__create">
+                    New user?
+                    <span class="popup-login__create-span">Create an account</span>
+                </p>
+                <form>
+                    <span class="login-input-box">
+                        Email Address
+                        <input class="login-input" type="text" placeholder="Enter your e-mail">
+                    </span>
+                    <span class="login-input-box">
+                        Password
+                        <input class="login-input" type="password" placeholder="********">
+                        <div class="password-img-box"></div>
+                    </span>
+                    <div class="login-btn-box">
+                        <a class="forget" href="#">Forgot password?</a>
+                        <button class="login-btn btn" type="submit">Log in</button>
+                    </div>
+                    <p class="form-text">Or sign in with</p>
+                    <div class="sign__btn-box">
+                        <button class="sign__btn">
+                            <img src="images/icons/google.svg" alt="">
+                        </button>
+                        <button class="sign__btn">
+                            <img src="images/icons/fb.svg" alt="">
+                        </button>
+                        <button class="sign__btn">
+                            <img src="images/icons/apple.svg" alt="">
+                        </button>
+                    </div>
+                    <p class="protected-text">
+                        Protected by reCAPTCHA and subject to the Google <a href="#">Privacy Policy</a> and
+                        <a href="#">Terms of Service</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup subscription-popup-box">
+        <div class="popup__body">
+            <div class="popup__content popup-subscription">
+                <div class="application block--active">
+                    <h3 class="application__title subscription-title">Subscription Application</h3>
+                    <div class="close"></div>
+                    <form>
+                        <span class="application-input-box">
+                            Enter your name
+                            <input class="application-input" type="text" placeholder="Enter your name">
+                        </span>
+                        <span class="application-input-box">
+                            E-mail
+                            <input class="application-input" type="text" placeholder="Enter your e-mail">
+                        </span>
+                        <span class="application-input-box">
+                            Phone
+                            <input class="application-input" type="text" placeholder="Enter your phone">
+                        </span>
+                        <span class="subscription__btn application__btn btn">Apply</span>
+                    </form>
+                </div>
+
+                <div class="payment">
+                    <h3 class="payment__title subscription-title">Purchase payment</h3>
+                    <div class="close"></div>
+                    <form>
+                        <div class="pay-box">
+                            <span class="apple-pay">Pay</span>
+                            <span class="google-pay">Pay</span>
+                        </div>
+                        <span class="application-input-box">
+                            Card Number
+                            <input class="application-input" type="text" placeholder="1234 1234 1234 1234">
+                        </span>
+                        <div class="card-box">
+                            <span class="application-input-box">
+                                Expiration Date
+                                <input class="application-input" type="text" placeholder="MM/ГГ">
+                            </span>
+                            <span class="application-input-box">
+                                CVC
+                                <input class="application-input" type="text" placeholder="CVC">
+                            </span>
+                        </div>
+                        <span class="subscription__btn payment__btn btn">Pay with card</span>
+                        <p class="payment__text">We do not collect information on your cards, everything is safe</p>
+                    </form>
+                </div>
+
+                <div class="paid">
+                    <h3 class="paid__title subscription-title">Subscription paid</h3>
+                    <div class="close"></div>
+                    <img class="paid__img" src="images/icons/step3.svg" alt="paid">
+                    <span class="paid__btn btn">Continue work</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
