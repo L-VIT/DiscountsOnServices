@@ -100,6 +100,12 @@
     .about__info{
         width: 70%;
     }
+    .plan__list {
+        margin-left: 15px;
+    }
+    .plan__content-btn{
+        padding: 15px 50px;
+    }
 }
 
 @media(max-width:930px){
@@ -223,6 +229,21 @@
         padding-top: 12px;
         border-top: 1px solid rgba(247, 247, 247, 0.5);
     }
+    .plan__content-title {
+        font-size: 25px;
+        line-height: 35px;
+        padding: 32px 15px 20px;
+        margin-bottom: 20px;
+    }
+    .plan__list{
+        margin-bottom: 32px;
+    }
+    .plan__content-price{
+        margin-bottom: 12px;
+    }
+    .plan__content-btn{
+        margin-bottom: 32px;
+    }
 }
 
 @media(max-width:750px){
@@ -264,6 +285,9 @@
         display: flex;
         justify-content: space-between;
         gap: 70px;
+    }
+    .plan__content-btn {
+        padding: 15px 35px;
     }
 }
 
@@ -342,6 +366,12 @@
     .request__info{
         margin-bottom: 32px;
     }
+    .tab-content__inner{
+        flex-direction: column;
+    }
+    .plan__content-btn {
+        padding: 15px 80px;
+    }
 }
 
 @media(max-width:550px){
@@ -355,6 +385,9 @@
 }
 
 @media(max-width:420px){
+    .header{
+        margin-bottom: 48px;
+    }
     .popup-login,
     .popup-subscription{
         padding: 30px;
@@ -374,6 +407,20 @@
     .login-input-box + .login-input-box {
         margin-top: 20px;
         margin-bottom: 30px;
+    }
+    .plan__title {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 16px;
+    }
+    .plan__subtitle{
+        font-size: 17px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    .plan__tab{
+        padding: 17px 30px;
+        margin-bottom: 32px;
     }
 }
 

@@ -76,4 +76,25 @@ $(function () {
         $(this).parent().parent().next().addClass('block--active');
     });
 
+    // $('.login-input').blur(function () {
+    //     if ($(this).val() != '') {
+    //         let pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+    //         if (pattern.test($(this).val())) {
+    //             $(this).removeClass('input-notcorect').addClass('input-corect');
+    //         } else {
+    //             $(this).removeClass('input-corect').addClass('input-notcorect');
+    //         }
+    //     } else {
+    //         $(this).addClass('input-notcorect');
+    //     }
+    // });
+
+    // $('.password-input').blur(function () {
+    //     if ($(this).val() != '') {
+    //         $(this).removeClass('input-notcorect').addClass('input-corect');
+    //     } else {
+    //         $(this).removeClass('input-corect').addClass('input-notcorect');
+    //     }
+    // });
+
 });

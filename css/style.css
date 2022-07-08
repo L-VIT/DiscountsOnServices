@@ -794,6 +794,7 @@ header{
     opacity: 0;
     transition: all .7s;
     /* overflow-y: auto; */
+    z-index: 3;
 }
 
 .popup--active{
@@ -878,6 +879,7 @@ header{
 }
 
 .login-input,
+.password-input,
 .application-input{
     width: 100%;
     margin-top: 9px;
@@ -893,14 +895,24 @@ header{
 }
 
 .login-input::placeholder,
+.password-input::placeholder,
 .application-input::placeholder{
     color: #8F8F8F;
 }
 
 .login-input:hover,
+.password-input:hover,
 .application-input:hover{
     border-color: #838099;
 }
+
+/* .input-corect{
+    border-color: green;
+}
+
+.input-notcorect{
+    border-color: #FD4646;
+} */
 
 .password-img-box{
     position: absolute;
@@ -1074,7 +1086,7 @@ header{
     text-align: center;
     font-size: 32px;
     line-height: 45px;
-    padding: 60px 0 32px;
+    padding: 60px 15px 32px;
     border-bottom: 1px solid #DBDBDB;
     margin-bottom: 36px;
 }
@@ -1082,6 +1094,7 @@ header{
 .plan__list{
     margin-left: 40px;
     margin-bottom: 64px;
+    padding-right: 15px;
 }
 
 .plan__list-item{
@@ -1115,6 +1128,7 @@ header{
     text-align: center;
     color: #0F0F0F;
     margin-bottom: 30px;
+    padding: 0 15px;
 }
 
 .plan__content-price span{
@@ -1166,6 +1180,7 @@ header{
     background-color: #ECF3FB;
     width: 100%;
     box-shadow: 0px 3px 3px #727070;
+    z-index: 2;
 }
 
 .mobile__menu-list,
