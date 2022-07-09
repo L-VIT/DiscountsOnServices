@@ -76,25 +76,69 @@ $(function () {
         $(this).parent().parent().next().addClass('block--active');
     });
 
-    // $('.login-input').blur(function () {
-    //     if ($(this).val() != '') {
-    //         let pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-    //         if (pattern.test($(this).val())) {
-    //             $(this).removeClass('input-notcorect').addClass('input-corect');
-    //         } else {
-    //             $(this).removeClass('input-corect').addClass('input-notcorect');
-    //         }
-    //     } else {
-    //         $(this).addClass('input-notcorect');
-    //     }
-    // });
+   
+// ######### Валідація форми для авторизації ##########
+    $('.login-input').blur(function () {
+        // підсвічення поля вводу ел.пошти при правильному чи неправильному заповненні без натискання на кнопку відправки
+        if ($(this).val() != '') {
+            let pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if (pattern.test($(this).val())) {
+                $(this).removeClass('input-notcorect').addClass('input-corect');
+            } else {
+                $(this).removeClass('input-corect').addClass('input-notcorect');
+            }
+        } else {
+            $(this).addClass('input-notcorect');
+        }
+    });
 
-    // $('.password-input').blur(function () {
-    //     if ($(this).val() != '') {
-    //         $(this).removeClass('input-notcorect').addClass('input-corect');
-    //     } else {
-    //         $(this).removeClass('input-corect').addClass('input-notcorect');
-    //     }
-    // });
+    $('.password-input').blur(function () {
+        // підсвічення поля вводу пароля в залежності від того пусте поле чи заповнене без натискання на кнопку відправки
+        if ($(this).val() != '') {
+            $(this).removeClass('input-notcorect').addClass('input-corect');
+        } else {
+            $(this).removeClass('input-corect').addClass('input-notcorect');
+        }
+    });
+
+    $('.login-form').submit(function(){{
+        // валідація форми при натисненні на кнопку відправки
+        let loginError = true;
+        let passError = true;
+
+        if ($('.login-input').val() != '') {
+            let pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if (pattern.test($('.login-input').val())) {
+                $('.login-input').removeClass('input-notcorect').addClass('input-corect');
+                loginError = false;
+                if (loginError == false && passError == false) {
+                    $('.login-btn').removeAttr('disabled');
+                }
+            } else {
+                $('.login-input').removeClass('input-corect').addClass('input-notcorect');
+                loginError = true;
+            }
+        } else {
+            $('.login-input').addClass('input-notcorect');
+            loginError = true;
+        }
+
+        if ($('.password-input').val() != '') {
+            $('.password-input').removeClass('input-notcorect').addClass('input-corect');
+            passError = false;
+            if (loginError == false && passError == false) {
+                $('.login-btn').removeAttr('disabled');
+            }
+        } else {
+            $('.password-input').removeClass('input-corect').addClass('input-notcorect');
+            passError = true;
+        }
+
+        if(loginError==false && passError==false){
+            $('.login-form').post();
+        }else{
+            return false;
+        }
+    }});
 
 });

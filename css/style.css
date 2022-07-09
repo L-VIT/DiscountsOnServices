@@ -906,13 +906,13 @@ header{
     border-color: #838099;
 }
 
-/* .input-corect{
+.input-corect{
     border-color: green;
 }
 
 .input-notcorect{
     border-color: #FD4646;
-} */
+}
 
 .password-img-box{
     position: absolute;
