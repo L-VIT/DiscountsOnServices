@@ -26,11 +26,15 @@ $(function () {
     $('.login, .mobile-login').on('click', function(){
         //відкриття модального вікна авторизації
         $('.login-popup').addClass('popup--active');
+        $('.popup').addClass('scrol');
+        $('body').addClass('no-scrol');
     });
 
     $('.plan__content-btn').on('click', function(){
         //відкриття модального вікна оформлення підписки
         $('.subscription-popup-box').addClass('popup--active');
+        $('.popup').addClass('scrol');
+        $('body').addClass('no-scrol');
     });
     
     $('.close, .paid__btn').on('click', function(){
@@ -43,6 +47,15 @@ $(function () {
             $('.application').addClass('block--active');
         }, 5000);
     });
+
+    $('.popup__body').on('click', function () {
+        //закриття меню по кліку в пусте місце
+        if (!event.target.closest('.popup__content')) {
+          $('.popup--active').removeClass('popup--active');
+          $('.popup').removeClass('scrol');
+          $('body').removeClass('no-scrol');
+        }
+      });
 
     $('.password-img-box').on('click', function(){
         //Відкриття/закриття паролю по кліку на кнопку

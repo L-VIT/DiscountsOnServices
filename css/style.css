@@ -1395,3 +1395,11 @@ header{
     margin: 0 auto;
     margin-bottom: 35px;
 }
+
+.no-scrol{
+    overflow: hidden;
+}
+
+.scrol{
+    overflow: auto;
+}
